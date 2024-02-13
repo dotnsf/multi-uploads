@@ -1,0 +1,44 @@
+swagger: '2.0'
+info:
+  description: MULTI UPLOADS REST API ドキュメント
+  version: 0.0.1
+  title: MULTI UPLOADS REST APIs
+#host: localhost:8080
+basePath: /api
+tags:
+  - name: test
+    description: TEST
+schemes:
+  - http
+  - https
+paths:
+  /uploads:
+    post:
+      tags:
+        - test
+      summary: test
+      description: test
+      consumes:
+        - multipart/form-data
+      produces:
+        - application/json
+      parameters:
+        - name: xyz
+          in: formData
+          type: string  
+          default: String
+          required: true
+          description: String
+        - name: file1
+          in: formData
+          type: file  
+          description: File 1
+        - name: file2
+          in: formData
+          type: file  
+          description: File 2
+      responses:
+        '200':
+          description: 成功
+        '400':
+          description: エラー

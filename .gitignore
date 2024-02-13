@@ -1,0 +1,13 @@
+node_modules/
+memo*.txt
+nlu.js
+package-lock.json
+training_data/
+sys_category_*.json
+sys_input_*.txt
+output/
+.env*
+data/
+uploads/*
+settings
+!.gitkeep
